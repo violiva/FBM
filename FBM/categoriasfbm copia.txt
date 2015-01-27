@@ -1,0 +1,73 @@
+{
+    A =     (
+		"Liga Femenina de Baloncesto",
+		"ADECCO PLATA",
+		"L.F.-2",
+		"EBA",
+		"ADECCO ORO",
+		"Free Basket",
+		"Liga Universitaria Masculina",
+		"Liga Universitaria Femenina",
+		"1ª División Nac. Masculina",
+		"1ª División Nac. Femenina",
+		"1ª Div. Aut. Masc. Sr. A",
+		"1ª Div. Aut. Masc. Sr. B",
+		"1ª Div. Aut. Fem.",
+		"2ª Div Aut Masc A1",
+		"2ª Div Aut Masc A2",
+		"2ª Div Aut Masc B",
+		"2ª Div Aut Fem A1",
+		"2ª Div Aut Fem A2",
+		"2ª Div Aut Fem B"
+	);
+	B = 	(
+		"Sub 21 Masc. A1",
+		"Sub 21 Masc. A2"
+	);
+	C = 	(
+		"Junior Masc. A1",
+		"Junior Masc. A2",
+		"Junior Fem. A1",
+		"Junior Fem. A2"
+	);
+	D = 	(
+		"Cadete Masc. A1",
+		"Cadete Masc. A2",
+		"Cadete Fem. A1",
+		"Cadete Fem. A2"
+	);
+	E = 	(
+		"Infantil Masc. A1",
+		"Infantil Masc. A2",
+		"Infantil Fem. A1",
+		"Infantil Fem. A2"
+	);
+	F =		(
+		"Sub 21 Masc. Fed.",
+		"Junior Masc. Federado",
+		"Junior Fem. Federado",
+		"Cadete Masc. Federado",
+		"Cadete Fem. Federado",
+		"Infantil Masc. Federado",
+		"Infantil Fem. Federado",
+		"Preinfantil Masculino",
+		"Preinfantil Femenino"
+	);
+	G =		(
+		"Alv Mas 2º año",
+		"Alv Fem 2º año",
+		"Alv Mas 1º año",
+		"Alv Fem 1º año",
+		"Benj Mas 2º año",
+		"Benj Fem 2º año",
+		"Benj Mas 1º año",
+		"Benj Fem 1º año"
+	);
+	H = 	(
+		"Cpto.Cadete Mas.Selec.Aut.2015",
+		"Cpto.Cadete Fem.Selec.Aut.2015",
+		"V Torneo Leucemia y Linfoma",
+		"VI TORNEO LIGA EBA",
+		"II TORNEO LIGA FEMENINA-2"
+	);
+}

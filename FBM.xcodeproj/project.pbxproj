@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		AD11ECCA1A778E1200923C02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD11ECC91A778E1200923C02 /* main.m */; };
 		AD11ECCD1A778E1200923C02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD11ECCC1A778E1200923C02 /* AppDelegate.m */; };
-		AD11ECD01A778E1200923C02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD11ECCF1A778E1200923C02 /* ViewController.m */; };
 		AD11ECD31A778E1200923C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD11ECD11A778E1200923C02 /* Main.storyboard */; };
 		AD11ECD51A778E1200923C02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD11ECD41A778E1200923C02 /* Images.xcassets */; };
 		AD11ECD81A778E1200923C02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD11ECD61A778E1200923C02 /* LaunchScreen.xib */; };
 		AD11ECE41A778E1300923C02 /* FBMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD11ECE31A778E1300923C02 /* FBMTests.m */; };
+		AD11ECEE1A778F2B00923C02 /* categoriasfbm.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD11ECED1A778F2B00923C02 /* categoriasfbm.txt */; };
+		AD11ECF21A778FC300923C02 /* VOSSelectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD11ECF11A778FC300923C02 /* VOSSelectionModel.m */; };
+		AD11ECF61A7799E800923C02 /* VOSSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD11ECF51A7799E800923C02 /* VOSSelectionTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,17 @@
 		AD11ECC91A778E1200923C02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD11ECCB1A778E1200923C02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD11ECCC1A778E1200923C02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AD11ECCE1A778E1200923C02 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AD11ECCF1A778E1200923C02 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AD11ECD21A778E1200923C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD11ECD41A778E1200923C02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AD11ECD71A778E1200923C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AD11ECDD1A778E1300923C02 /* FBMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD11ECE21A778E1300923C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD11ECE31A778E1300923C02 /* FBMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBMTests.m; sourceTree = "<group>"; };
+		AD11ECED1A778F2B00923C02 /* categoriasfbm.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = categoriasfbm.txt; sourceTree = "<group>"; };
+		AD11ECF01A778FC300923C02 /* VOSSelectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSSelectionModel.h; sourceTree = "<group>"; };
+		AD11ECF11A778FC300923C02 /* VOSSelectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSSelectionModel.m; sourceTree = "<group>"; };
+		AD11ECF41A7799E800923C02 /* VOSSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSSelectionTableViewController.h; sourceTree = "<group>"; };
+		AD11ECF51A7799E800923C02 /* VOSSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSSelectionTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +88,13 @@
 			children = (
 				AD11ECCB1A778E1200923C02 /* AppDelegate.h */,
 				AD11ECCC1A778E1200923C02 /* AppDelegate.m */,
-				AD11ECCE1A778E1200923C02 /* ViewController.h */,
-				AD11ECCF1A778E1200923C02 /* ViewController.m */,
 				AD11ECD11A778E1200923C02 /* Main.storyboard */,
 				AD11ECD41A778E1200923C02 /* Images.xcassets */,
 				AD11ECD61A778E1200923C02 /* LaunchScreen.xib */,
+				AD11ECF31A778FD000923C02 /* Models */,
+				AD11ECEF1A778F3200923C02 /* Resources */,
 				AD11ECC71A778E1200923C02 /* Supporting Files */,
+				AD11ECF71A7799EE00923C02 /* Controllers */,
 			);
 			path = FBM;
 			sourceTree = "<group>";
@@ -117,6 +123,32 @@
 				AD11ECE21A778E1300923C02 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD11ECEF1A778F3200923C02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD11ECED1A778F2B00923C02 /* categoriasfbm.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AD11ECF31A778FD000923C02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD11ECF01A778FC300923C02 /* VOSSelectionModel.h */,
+				AD11ECF11A778FC300923C02 /* VOSSelectionModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AD11ECF71A7799EE00923C02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD11ECF41A7799E800923C02 /* VOSSelectionTableViewController.h */,
+				AD11ECF51A7799E800923C02 /* VOSSelectionTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +233,7 @@
 			files = (
 				AD11ECD31A778E1200923C02 /* Main.storyboard in Resources */,
 				AD11ECD81A778E1200923C02 /* LaunchScreen.xib in Resources */,
+				AD11ECEE1A778F2B00923C02 /* categoriasfbm.txt in Resources */,
 				AD11ECD51A778E1200923C02 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD11ECD01A778E1200923C02 /* ViewController.m in Sources */,
 				AD11ECCD1A778E1200923C02 /* AppDelegate.m in Sources */,
 				AD11ECCA1A778E1200923C02 /* main.m in Sources */,
+				AD11ECF21A778FC300923C02 /* VOSSelectionModel.m in Sources */,
+				AD11ECF61A7799E800923C02 /* VOSSelectionTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
