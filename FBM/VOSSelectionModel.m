@@ -24,26 +24,36 @@
 }
 
 #pragma mark - Utils
--(NSArray *) groups{
+-(NSArray *) categories{
     return [[self.selections allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
     
 }
 
--(NSString *) groupAtIndex: (NSInteger) aGroupIndex{
-    return [[self groups ] objectAtIndex:aGroupIndex];
+-(NSString *) categoryAtIndex: (NSInteger) anIndex{
+    return [[self categories ] objectAtIndex:anIndex];
 }
 
--(NSString *) selectionAtIndex:(NSInteger) aSelectionIndex inGroupAtIndex:(NSInteger) aGroupIndex{
-
-    NSArray * selections = [[self selectionsAtIndex:aGroupIndex] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-
-    return [selections objectAtIndex:aSelectionIndex];
+-(NSArray *) groupsAtIndex: (NSInteger) aCategoryIndex{
+    NSDictionary * groupsDict = [[self selections] objectForKey:[self categoryAtIndex:aCategoryIndex]];
+    NSArray * groupsArray = [[groupsDict allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    
+    return groupsArray;
+    
 }
 
--(NSArray *) selectionsAtIndex:(NSInteger) aGroupIndex{
-    NSString * group = [[self groups ] objectAtIndex:aGroupIndex];
-    return [[self.selections objectForKey:group] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+// return the name of the group in aCategoryIndex and aGroupIndex
+-(NSString *) groupAtIndex: (NSInteger) aGroupIndex inCategoryAtIndex: (NSInteger) aCategoryIndex{
+    return [[self groupsAtIndex:aCategoryIndex] objectAtIndex:aGroupIndex];
 }
 
+-(NSDictionary *) teamsInAGroup: (NSInteger) groupIndex aCategoryIndex: (NSInteger) aCategoryIndex{
+    
+    NSString * catGroup = [self categoryAtIndex:aCategoryIndex];
+    NSString * titleNewTable = [self groupAtIndex:groupIndex inCategoryAtIndex:aCategoryIndex];
+    NSDictionary * groupsDict = [[self selections] objectForKey:catGroup];
+    NSDictionary * teamsDictionary = @{ titleNewTable : [groupsDict objectForKey:[self groupAtIndex:groupIndex inCategoryAtIndex:aCategoryIndex]]  };
+    
+    return teamsDictionary;
+}
 
 @end

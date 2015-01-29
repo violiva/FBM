@@ -8,6 +8,7 @@
 
 #import "VOSSelectionTableViewController.h"
 #import "VOSSelectionModel.h"
+#import "VOSTeamsTableViewController.h"
 
 @interface VOSSelectionTableViewController ()
 
@@ -29,33 +30,53 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return [[self.model groups] count];
+    return [[self.model categories] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [[self.model selectionsAtIndex:section] count];
+    return [[self.model groupsAtIndex:section] count];
 }
 
 
 -(NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     // Mostramos cabecera de la sección del grupo
-    return [self.model groupAtIndex:section];
+    return [self.model categoryAtIndex:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString * cellIdentifier = @"Cell";
+    static NSString * cellId = @"Cell";
  
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
  
     if ( cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
  
     // Configure the cell...
-    cell.textLabel.text = [self.model selectionAtIndex:indexPath.row inGroupAtIndex:indexPath.section];
+    cell.textLabel.text = [self.model groupAtIndex:indexPath.row inCategoryAtIndex:indexPath.section];
  
  return cell;
 }
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    if ( [segue.identifier isEqualToString:@"showTeams"]){
+        
+        NSIndexPath * indexPath = [self.tableView indexPathForSelectedRow];
+        NSDictionary * teams = [self.model teamsInAGroup:indexPath.row aCategoryIndex:indexPath.section];
+
+        // identificamos el ViewControler al que se realizará la transición
+        VOSTeamsTableViewController * teamsTabVC = segue.destinationViewController;
+        
+        // asignamos valores a destino
+        teamsTabVC = [teamsTabVC initWithModel:teams style:UITableViewStylePlain];
+
+    }
+    
+}
+
 
 @end

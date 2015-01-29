@@ -16,6 +16,7 @@
 		AD11ECEE1A778F2B00923C02 /* categoriasfbm.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD11ECED1A778F2B00923C02 /* categoriasfbm.txt */; };
 		AD11ECF21A778FC300923C02 /* VOSSelectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD11ECF11A778FC300923C02 /* VOSSelectionModel.m */; };
 		AD11ECF61A7799E800923C02 /* VOSSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD11ECF51A7799E800923C02 /* VOSSelectionTableViewController.m */; };
+		AD11ECFA1A78033300923C02 /* VOSTeamsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD11ECF91A78033300923C02 /* VOSTeamsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		AD11ECF11A778FC300923C02 /* VOSSelectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSSelectionModel.m; sourceTree = "<group>"; };
 		AD11ECF41A7799E800923C02 /* VOSSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSSelectionTableViewController.h; sourceTree = "<group>"; };
 		AD11ECF51A7799E800923C02 /* VOSSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSSelectionTableViewController.m; sourceTree = "<group>"; };
+		AD11ECF81A78033300923C02 /* VOSTeamsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSTeamsTableViewController.h; sourceTree = "<group>"; };
+		AD11ECF91A78033300923C02 /* VOSTeamsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSTeamsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 			children = (
 				AD11ECF41A7799E800923C02 /* VOSSelectionTableViewController.h */,
 				AD11ECF51A7799E800923C02 /* VOSSelectionTableViewController.m */,
+				AD11ECF81A78033300923C02 /* VOSTeamsTableViewController.h */,
+				AD11ECF91A78033300923C02 /* VOSTeamsTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			files = (
 				AD11ECCD1A778E1200923C02 /* AppDelegate.m in Sources */,
 				AD11ECCA1A778E1200923C02 /* main.m in Sources */,
+				AD11ECFA1A78033300923C02 /* VOSTeamsTableViewController.m in Sources */,
 				AD11ECF21A778FC300923C02 /* VOSSelectionModel.m in Sources */,
 				AD11ECF61A7799E800923C02 /* VOSSelectionTableViewController.m in Sources */,
 			);
@@ -382,6 +388,7 @@
 				INFOPLIST_FILE = FBM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -392,6 +399,7 @@
 				INFOPLIST_FILE = FBM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -448,6 +456,7 @@
 				AD11ECE91A778E1300923C02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD11ECEA1A778E1300923C02 /* Build configuration list for PBXNativeTarget "FBMTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +465,7 @@
 				AD11ECEC1A778E1300923C02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,9 +12,10 @@
 
 @property (strong) NSDictionary * selections;
 
--(NSArray *) groups;
--(NSString *) groupAtIndex: (NSInteger) aGroupIndex;
--(NSString *) selectionAtIndex:(NSInteger) aSelectionIndex inGroupAtIndex:(NSInteger) aGroupIndex;
--(NSArray *) selectionsAtIndex:(NSInteger) aGroupIndex;
+-(NSArray *) categories;
+-(NSString *) categoryAtIndex: (NSInteger) anIndex;
+-(NSArray *) groupsAtIndex: (NSInteger) aCategoryIndex;
+-(NSString *) groupAtIndex: (NSInteger) aGroupIndex inCategoryAtIndex: (NSInteger) aCategoryIndex;
+-(NSDictionary *) teamsInAGroup: (NSInteger) groupIndex aCategoryIndex: (NSInteger) aCategoryIndex;
 
 @end
