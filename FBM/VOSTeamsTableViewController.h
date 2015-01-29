@@ -12,7 +12,4 @@
 
 @property (strong, nonatomic) NSDictionary * teams;
 
--(id)initWithModel:(NSDictionary *) aTeams
-             style:(UITableViewStyle) style;
-
 @end

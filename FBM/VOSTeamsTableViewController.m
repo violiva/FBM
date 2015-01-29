@@ -10,30 +10,14 @@
 
 @implementation VOSTeamsTableViewController
 
--(id)initWithModel:(NSDictionary *) aTeams
-             style:(UITableViewStyle) style{
-    
-    if (self = [super initWithStyle:style] ){
-        _teams = aTeams;
-        self.title =  [[[self teams] allKeys] lastObject];
-    }
-    return self;
-    
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    self.title = [[[self teams] allKeys] lastObject];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -60,12 +44,12 @@
     }
     
     // Configure the cell...
-    
     TeamCell.textLabel.text = [self teamAtIndex:indexPath.row];
     
     return TeamCell;
 }
 
+#pragma mark - Utils
 -(id)teamAtIndex:(NSInteger) row{
     NSString * group = [[[self teams] allKeys] lastObject];
     NSArray * listOfTeam = [[[self teams] objectForKey:group] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];

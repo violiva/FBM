@@ -36,6 +36,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     return [[self.model groupsAtIndex:section] count];
+    
 }
 
 
@@ -72,11 +73,10 @@
         VOSTeamsTableViewController * teamsTabVC = segue.destinationViewController;
         
         // asignamos valores a destino
-        teamsTabVC = [teamsTabVC initWithModel:teams style:UITableViewStylePlain];
+        teamsTabVC.teams = teams;
 
     }
     
 }
-
 
 @end
